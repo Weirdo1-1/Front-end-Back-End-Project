@@ -1,11 +1,17 @@
 <?php
 
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
+$firstName = $_POST['firstname'];
+$lastName = $_POST['lastname'];
 $email = $_POST['email'];
 
-echo $firstName . ' ' . $lastName . ' ' . $email;
+if (isset($_POST['submit'])) {
+    
+    echo $firstName . ' / ' . $lastName . "/" . $email;
+    
 
+}
+
+    
 
 ?>
 
