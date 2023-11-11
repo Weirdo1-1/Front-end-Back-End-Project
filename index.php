@@ -1,5 +1,11 @@
 <?php
 
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
+
+echo $firstName . ' ' . $lastName . ' ' . $email;
+
 
 ?>
 
@@ -15,12 +21,13 @@
 <body>
 
 
-<form action="index.php">
+<form action="index.php" method="POST">
 
-<input type="text" name="firstname" id="firstname">
-<input type="text" name="lastname" id="lastname">
-<input type="text" name="email" id="email">
-firstname
+<input type="text" name="firstname" id="firstname" placeholder="first name">
+<input type="text" name="lastname" id="lastname" placeholder="last name">
+<input type="text" name="email" id="email" placeholder="email">
+<input type="submit" name="submit" value="send">
+
 </form>
 
     
